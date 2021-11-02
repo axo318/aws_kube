@@ -1,0 +1,495 @@
+I1102 10:02:27.267979   26999 new_cluster.go:1055]  Cloud Provider ID = aws
+I1102 10:02:27.396056   26999 subnets.go:180] Assigned CIDR 172.20.32.0/19 to subnet eu-central-1a
+Previewing changes that will be made:
+
+I1102 10:02:31.009059   26999 apply_cluster.go:486] Gossip DNS: skipping DNS validation
+I1102 10:02:32.813507   26999 executor.go:111] Tasks: 0 done / 95 total; 43 can run
+W1102 10:02:32.917099   26999 vfs_castore.go:377] CA private key was not found
+I1102 10:02:33.384153   26999 executor.go:111] Tasks: 43 done / 95 total; 18 can run
+I1102 10:02:33.963470   26999 executor.go:111] Tasks: 61 done / 95 total; 26 can run
+I1102 10:02:34.104110   26999 executor.go:111] Tasks: 87 done / 95 total; 2 can run
+W1102 10:02:34.128371   26999 bootstrapscript.go:89] Task did not have an address: *awstasks.ClassicLoadBalancer {"Name":"api.clusterabouttofail.k8s.local","Lifecycle":"Sync","LoadBalancerName":"api-clusterabouttofail-k8-07r10s","DNSName":null,"HostedZoneId":null,"Subnets":[{"Name":"eu-central-1a.clusterabouttofail.k8s.local","ShortName":"eu-central-1a","Lifecycle":"Sync","ID":null,"VPC":{"Name":"clusterabouttofail.k8s.local","Lifecycle":"Sync","ID":null,"CIDR":"172.20.0.0/16","AmazonIPv6":true,"IPv6CIDR":null,"EnableDNSHostnames":true,"EnableDNSSupport":true,"Shared":false,"Tags":{"KubernetesCluster":"clusterabouttofail.k8s.local","Name":"clusterabouttofail.k8s.local","kubernetes.io/cluster/clusterabouttofail.k8s.local":"owned"},"AssociateExtraCIDRBlocks":null},"AmazonIPv6CIDR":null,"AvailabilityZone":"eu-central-1a","CIDR":"172.20.32.0/19","IPv6CIDR":null,"Shared":false,"Tags":{"KubernetesCluster":"clusterabouttofail.k8s.local","Name":"eu-central-1a.clusterabouttofail.k8s.local","SubnetType":"Public","kubernetes.io/cluster/clusterabouttofail.k8s.local":"owned","kubernetes.io/role/elb":"1","kubernetes.io/role/internal-elb":"1"}}],"SecurityGroups":[{"Name":"api-elb.clusterabouttofail.k8s.local","Lifecycle":"Sync","ID":null,"Description":"Security group for api ELB","VPC":{"Name":"clusterabouttofail.k8s.local","Lifecycle":"Sync","ID":null,"CIDR":"172.20.0.0/16","AmazonIPv6":true,"IPv6CIDR":null,"EnableDNSHostnames":true,"EnableDNSSupport":true,"Shared":false,"Tags":{"KubernetesCluster":"clusterabouttofail.k8s.local","Name":"clusterabouttofail.k8s.local","kubernetes.io/cluster/clusterabouttofail.k8s.local":"owned"},"AssociateExtraCIDRBlocks":null},"RemoveExtraRules":["port=443"],"Shared":null,"Tags":{"KubernetesCluster":"clusterabouttofail.k8s.local","Name":"api-elb.clusterabouttofail.k8s.local","kubernetes.io/cluster/clusterabouttofail.k8s.local":"owned"}}],"Listeners":{"443":{"InstancePort":443,"SSLCertificateID":""}},"Scheme":null,"HealthCheck":{"Target":"SSL:443","HealthyThreshold":2,"UnhealthyThreshold":2,"Interval":10,"Timeout":5},"AccessLog":{"EmitInterval":null,"Enabled":false,"S3BucketName":null,"S3BucketPrefix":null},"ConnectionDraining":null,"ConnectionSettings":{"IdleTimeout":300},"CrossZoneLoadBalancing":{"Enabled":false},"SSLCertificateID":"","Tags":{"KubernetesCluster":"clusterabouttofail.k8s.local","Name":"api.clusterabouttofail.k8s.local","kubernetes.io/cluster/clusterabouttofail.k8s.local":"owned"},"ForAPIServer":true,"Shared":null}
+W1102 10:02:34.150998   26999 bootstrapscript.go:89] Task did not have an address: *awstasks.ClassicLoadBalancer {"Name":"api.clusterabouttofail.k8s.local","Lifecycle":"Sync","LoadBalancerName":"api-clusterabouttofail-k8-07r10s","DNSName":null,"HostedZoneId":null,"Subnets":[{"Name":"eu-central-1a.clusterabouttofail.k8s.local","ShortName":"eu-central-1a","Lifecycle":"Sync","ID":null,"VPC":{"Name":"clusterabouttofail.k8s.local","Lifecycle":"Sync","ID":null,"CIDR":"172.20.0.0/16","AmazonIPv6":true,"IPv6CIDR":null,"EnableDNSHostnames":true,"EnableDNSSupport":true,"Shared":false,"Tags":{"KubernetesCluster":"clusterabouttofail.k8s.local","Name":"clusterabouttofail.k8s.local","kubernetes.io/cluster/clusterabouttofail.k8s.local":"owned"},"AssociateExtraCIDRBlocks":null},"AmazonIPv6CIDR":null,"AvailabilityZone":"eu-central-1a","CIDR":"172.20.32.0/19","IPv6CIDR":null,"Shared":false,"Tags":{"KubernetesCluster":"clusterabouttofail.k8s.local","Name":"eu-central-1a.clusterabouttofail.k8s.local","SubnetType":"Public","kubernetes.io/cluster/clusterabouttofail.k8s.local":"owned","kubernetes.io/role/elb":"1","kubernetes.io/role/internal-elb":"1"}}],"SecurityGroups":[{"Name":"api-elb.clusterabouttofail.k8s.local","Lifecycle":"Sync","ID":null,"Description":"Security group for api ELB","VPC":{"Name":"clusterabouttofail.k8s.local","Lifecycle":"Sync","ID":null,"CIDR":"172.20.0.0/16","AmazonIPv6":true,"IPv6CIDR":null,"EnableDNSHostnames":true,"EnableDNSSupport":true,"Shared":false,"Tags":{"KubernetesCluster":"clusterabouttofail.k8s.local","Name":"clusterabouttofail.k8s.local","kubernetes.io/cluster/clusterabouttofail.k8s.local":"owned"},"AssociateExtraCIDRBlocks":null},"RemoveExtraRules":["port=443"],"Shared":null,"Tags":{"KubernetesCluster":"clusterabouttofail.k8s.local","Name":"api-elb.clusterabouttofail.k8s.local","kubernetes.io/cluster/clusterabouttofail.k8s.local":"owned"}}],"Listeners":{"443":{"InstancePort":443,"SSLCertificateID":""}},"Scheme":null,"HealthCheck":{"Target":"SSL:443","HealthyThreshold":2,"UnhealthyThreshold":2,"Interval":10,"Timeout":5},"AccessLog":{"EmitInterval":null,"Enabled":false,"S3BucketName":null,"S3BucketPrefix":null},"ConnectionDraining":null,"ConnectionSettings":{"IdleTimeout":300},"CrossZoneLoadBalancing":{"Enabled":false},"SSLCertificateID":"","Tags":{"KubernetesCluster":"clusterabouttofail.k8s.local","Name":"api.clusterabouttofail.k8s.local","kubernetes.io/cluster/clusterabouttofail.k8s.local":"owned"},"ForAPIServer":true,"Shared":null}
+I1102 10:02:34.151757   26999 executor.go:111] Tasks: 89 done / 95 total; 4 can run
+I1102 10:02:34.319563   26999 executor.go:111] Tasks: 93 done / 95 total; 2 can run
+I1102 10:02:34.457780   26999 executor.go:111] Tasks: 95 done / 95 total; 0 can run
+Will create resources:
+  AutoscalingGroup/master-eu-central-1a.masters.clusterabouttofail.k8s.local
+  	Granularity         	1Minute
+  	InstanceProtection  	false
+  	LaunchTemplate      	name:master-eu-central-1a.masters.clusterabouttofail.k8s.local
+  	LoadBalancers       	[name:api.clusterabouttofail.k8s.local id:api.clusterabouttofail.k8s.local]
+  	MaxSize             	1
+  	Metrics             	[GroupDesiredCapacity, GroupInServiceInstances, GroupMaxSize, GroupMinSize, GroupPendingInstances, GroupStandbyInstances, GroupTerminatingInstances, GroupTotalInstances]
+  	MinSize             	1
+  	Subnets             	[name:eu-central-1a.clusterabouttofail.k8s.local]
+  	SuspendProcesses    	[]
+  	Tags                	{kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/kops-controller-pki: , k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup: master-eu-central-1a, kops.k8s.io/instancegroup: master-eu-central-1a, k8s.io/cluster-autoscaler/node-template/label/kubernetes.io/role: master, k8s.io/role/master: 1, Name: master-eu-central-1a.masters.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, k8s.io/cluster-autoscaler/node-template/label/node-role.kubernetes.io/master: , k8s.io/cluster-autoscaler/node-template/label/node-role.kubernetes.io/control-plane: , k8s.io/cluster-autoscaler/node-template/label/node.kubernetes.io/exclude-from-external-load-balancers: }
+  	TargetGroups        	[]
+
+  AutoscalingGroup/nodes-eu-central-1a.clusterabouttofail.k8s.local
+  	Granularity         	1Minute
+  	InstanceProtection  	false
+  	LaunchTemplate      	name:nodes-eu-central-1a.clusterabouttofail.k8s.local
+  	LoadBalancers       	[]
+  	MaxSize             	1
+  	Metrics             	[GroupDesiredCapacity, GroupInServiceInstances, GroupMaxSize, GroupMinSize, GroupPendingInstances, GroupStandbyInstances, GroupTerminatingInstances, GroupTotalInstances]
+  	MinSize             	1
+  	Subnets             	[name:eu-central-1a.clusterabouttofail.k8s.local]
+  	SuspendProcesses    	[]
+  	Tags                	{k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup: nodes-eu-central-1a, k8s.io/role/node: 1, kops.k8s.io/instancegroup: nodes-eu-central-1a, Name: nodes-eu-central-1a.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, k8s.io/cluster-autoscaler/node-template/label/node-role.kubernetes.io/node: , k8s.io/cluster-autoscaler/node-template/label/kubernetes.io/role: node}
+  	TargetGroups        	[]
+
+  ClassicLoadBalancer/api.clusterabouttofail.k8s.local
+  	LoadBalancerName    	api-clusterabouttofail-k8-07r10s
+  	Subnets             	[name:eu-central-1a.clusterabouttofail.k8s.local]
+  	SecurityGroups      	[name:api-elb.clusterabouttofail.k8s.local]
+  	Listeners           	{443: {"InstancePort":443,"SSLCertificateID":""}}
+  	HealthCheck         	{"Target":"SSL:443","HealthyThreshold":2,"UnhealthyThreshold":2,"Interval":10,"Timeout":5}
+  	AccessLog           	{"EmitInterval":null,"Enabled":false,"S3BucketName":null,"S3BucketPrefix":null}
+  	ConnectionSettings  	{"IdleTimeout":300}
+  	CrossZoneLoadBalancing	{"Enabled":false}
+  	SSLCertificateID    	
+  	Tags                	{kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, Name: api.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local}
+  	ForAPIServer        	true
+
+  DHCPOptions/clusterabouttofail.k8s.local
+  	DomainName          	eu-central-1.compute.internal
+  	DomainNameServers   	AmazonProvidedDNS
+  	Shared              	false
+  	Tags                	{Name: clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned}
+
+  EBSVolume/a.etcd-events.clusterabouttofail.k8s.local
+  	AvailabilityZone    	eu-central-1a
+  	Encrypted           	true
+  	SizeGB              	20
+  	Tags                	{Name: a.etcd-events.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, k8s.io/etcd/events: a/a, k8s.io/role/master: 1, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned}
+  	VolumeIops          	3000
+  	VolumeThroughput    	125
+  	VolumeType          	gp3
+
+  EBSVolume/a.etcd-main.clusterabouttofail.k8s.local
+  	AvailabilityZone    	eu-central-1a
+  	Encrypted           	true
+  	SizeGB              	20
+  	Tags                	{Name: a.etcd-main.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, k8s.io/etcd/main: a/a, k8s.io/role/master: 1, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned}
+  	VolumeIops          	3000
+  	VolumeThroughput    	125
+  	VolumeType          	gp3
+
+  IAMInstanceProfile/masters.clusterabouttofail.k8s.local
+  	Tags                	{KubernetesCluster: clusterabouttofail.k8s.local, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, Name: masters.clusterabouttofail.k8s.local}
+  	Shared              	false
+
+  IAMInstanceProfile/nodes.clusterabouttofail.k8s.local
+  	Tags                	{kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, Name: nodes.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local}
+  	Shared              	false
+
+  IAMInstanceProfileRole/masters.clusterabouttofail.k8s.local
+  	InstanceProfile     	name:masters.clusterabouttofail.k8s.local id:masters.clusterabouttofail.k8s.local
+  	Role                	name:masters.clusterabouttofail.k8s.local
+
+  IAMInstanceProfileRole/nodes.clusterabouttofail.k8s.local
+  	InstanceProfile     	name:nodes.clusterabouttofail.k8s.local id:nodes.clusterabouttofail.k8s.local
+  	Role                	name:nodes.clusterabouttofail.k8s.local
+
+  IAMRole/masters.clusterabouttofail.k8s.local
+  	Tags                	{Name: masters.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned}
+  	ExportWithID        	masters
+
+  IAMRole/nodes.clusterabouttofail.k8s.local
+  	Tags                	{KubernetesCluster: clusterabouttofail.k8s.local, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, Name: nodes.clusterabouttofail.k8s.local}
+  	ExportWithID        	nodes
+
+  IAMRolePolicy/master-policyoverride
+  	Role                	name:masters.clusterabouttofail.k8s.local
+  	Managed             	true
+
+  IAMRolePolicy/masters.clusterabouttofail.k8s.local
+  	Role                	name:masters.clusterabouttofail.k8s.local
+  	Managed             	false
+
+  IAMRolePolicy/node-policyoverride
+  	Role                	name:nodes.clusterabouttofail.k8s.local
+  	Managed             	true
+
+  IAMRolePolicy/nodes.clusterabouttofail.k8s.local
+  	Role                	name:nodes.clusterabouttofail.k8s.local
+  	Managed             	false
+
+  InternetGateway/clusterabouttofail.k8s.local
+  	VPC                 	name:clusterabouttofail.k8s.local
+  	Shared              	false
+  	Tags                	{Name: clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned}
+
+  Keypair/apiserver-aggregator-ca
+  	Subject             	cn=apiserver-aggregator-ca
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/etcd-clients-ca
+  	Subject             	cn=etcd-clients-ca
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/etcd-manager-ca-events
+  	Subject             	cn=etcd-manager-ca-events
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/etcd-manager-ca-main
+  	Subject             	cn=etcd-manager-ca-main
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/etcd-peers-ca-events
+  	Subject             	cn=etcd-peers-ca-events
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/etcd-peers-ca-main
+  	Subject             	cn=etcd-peers-ca-main
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/kubernetes-ca
+  	Subject             	cn=kubernetes-ca
+  	Type                	ca
+  	LegacyFormat        	false
+
+  Keypair/service-account
+  	Subject             	cn=service-account
+  	Type                	ca
+  	LegacyFormat        	false
+
+  LaunchTemplate/master-eu-central-1a.masters.clusterabouttofail.k8s.local
+  	AssociatePublicIP   	true
+  	CPUCredits          	
+  	HTTPPutResponseHopLimit	3
+  	HTTPTokens          	required
+  	HTTPProtocolIPv6    	disabled
+  	IAMInstanceProfile  	name:masters.clusterabouttofail.k8s.local id:masters.clusterabouttofail.k8s.local
+  	ImageID             	099720109477/ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211015
+  	InstanceMonitoring  	false
+  	InstanceType        	t3.medium
+  	IPv6AddressCount    	0
+  	RootVolumeIops      	3000
+  	RootVolumeSize      	64
+  	RootVolumeThroughput	125
+  	RootVolumeType      	gp3
+  	RootVolumeEncryption	true
+  	RootVolumeKmsKey    	
+  	SecurityGroups      	[name:masters.clusterabouttofail.k8s.local]
+  	SpotPrice           	
+  	Tags                	{k8s.io/role/master: 1, kops.k8s.io/instancegroup: master-eu-central-1a, k8s.io/cluster-autoscaler/node-template/label/node.kubernetes.io/exclude-from-external-load-balancers: , k8s.io/cluster-autoscaler/node-template/label/node-role.kubernetes.io/control-plane: , kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, k8s.io/cluster-autoscaler/node-template/label/kubernetes.io/role: master, k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/kops-controller-pki: , k8s.io/cluster-autoscaler/node-template/label/node-role.kubernetes.io/master: , k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup: master-eu-central-1a, Name: master-eu-central-1a.masters.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local}
+
+  LaunchTemplate/nodes-eu-central-1a.clusterabouttofail.k8s.local
+  	AssociatePublicIP   	true
+  	CPUCredits          	
+  	HTTPPutResponseHopLimit	1
+  	HTTPTokens          	required
+  	HTTPProtocolIPv6    	disabled
+  	IAMInstanceProfile  	name:nodes.clusterabouttofail.k8s.local id:nodes.clusterabouttofail.k8s.local
+  	ImageID             	099720109477/ubuntu/images/hvm-ssd/ubuntu-focal-20.04-amd64-server-20211015
+  	InstanceMonitoring  	false
+  	InstanceType        	t3.medium
+  	IPv6AddressCount    	0
+  	RootVolumeIops      	3000
+  	RootVolumeSize      	128
+  	RootVolumeThroughput	125
+  	RootVolumeType      	gp3
+  	RootVolumeEncryption	true
+  	RootVolumeKmsKey    	
+  	SecurityGroups      	[name:nodes.clusterabouttofail.k8s.local]
+  	SpotPrice           	
+  	Tags                	{Name: nodes-eu-central-1a.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, k8s.io/cluster-autoscaler/node-template/label/node-role.kubernetes.io/node: , k8s.io/cluster-autoscaler/node-template/label/kubernetes.io/role: node, k8s.io/cluster-autoscaler/node-template/label/kops.k8s.io/instancegroup: nodes-eu-central-1a, k8s.io/role/node: 1, kops.k8s.io/instancegroup: nodes-eu-central-1a}
+
+  ManagedFile/cluster-completed.spec
+  	Base                	s3://k8-store-test/clusterabouttofail.k8s.local
+  	Location            	cluster-completed.spec
+
+  ManagedFile/clusterabouttofail.k8s.local-addons-aws-ebs-csi-driver.addons.k8s.io-k8s-1.17
+  	Location            	addons/aws-ebs-csi-driver.addons.k8s.io/k8s-1.17.yaml
+
+  ManagedFile/clusterabouttofail.k8s.local-addons-bootstrap
+  	Location            	addons/bootstrap-channel.yaml
+
+  ManagedFile/clusterabouttofail.k8s.local-addons-core.addons.k8s.io
+  	Location            	addons/core.addons.k8s.io/v1.4.0.yaml
+
+  ManagedFile/clusterabouttofail.k8s.local-addons-coredns.addons.k8s.io-k8s-1.12
+  	Location            	addons/coredns.addons.k8s.io/k8s-1.12.yaml
+
+  ManagedFile/clusterabouttofail.k8s.local-addons-dns-controller.addons.k8s.io-k8s-1.12
+  	Location            	addons/dns-controller.addons.k8s.io/k8s-1.12.yaml
+
+  ManagedFile/clusterabouttofail.k8s.local-addons-kops-controller.addons.k8s.io-k8s-1.16
+  	Location            	addons/kops-controller.addons.k8s.io/k8s-1.16.yaml
+
+  ManagedFile/clusterabouttofail.k8s.local-addons-kubelet-api.rbac.addons.k8s.io-k8s-1.9
+  	Location            	addons/kubelet-api.rbac.addons.k8s.io/k8s-1.9.yaml
+
+  ManagedFile/clusterabouttofail.k8s.local-addons-limit-range.addons.k8s.io
+  	Location            	addons/limit-range.addons.k8s.io/v1.5.0.yaml
+
+  ManagedFile/clusterabouttofail.k8s.local-addons-storage-aws.addons.k8s.io-v1.15.0
+  	Location            	addons/storage-aws.addons.k8s.io/v1.15.0.yaml
+
+  ManagedFile/etcd-cluster-spec-events
+  	Base                	s3://k8-store-test/clusterabouttofail.k8s.local/backups/etcd/events
+  	Location            	/control/etcd-cluster-spec
+
+  ManagedFile/etcd-cluster-spec-main
+  	Base                	s3://k8-store-test/clusterabouttofail.k8s.local/backups/etcd/main
+  	Location            	/control/etcd-cluster-spec
+
+  ManagedFile/kops-version.txt
+  	Base                	s3://k8-store-test/clusterabouttofail.k8s.local
+  	Location            	kops-version.txt
+
+  ManagedFile/manifests-etcdmanager-events
+  	Location            	manifests/etcd/events.yaml
+
+  ManagedFile/manifests-etcdmanager-main
+  	Location            	manifests/etcd/main.yaml
+
+  ManagedFile/manifests-static-kube-apiserver-healthcheck
+  	Location            	manifests/static/kube-apiserver-healthcheck.yaml
+
+  ManagedFile/nodeupconfig-master-eu-central-1a
+  	Location            	igconfig/master/master-eu-central-1a/nodeupconfig.yaml
+
+  ManagedFile/nodeupconfig-nodes-eu-central-1a
+  	Location            	igconfig/node/nodes-eu-central-1a/nodeupconfig.yaml
+
+  Route/0.0.0.0/0
+  	RouteTable          	name:clusterabouttofail.k8s.local
+  	CIDR                	0.0.0.0/0
+  	InternetGateway     	name:clusterabouttofail.k8s.local
+
+  Route/::/0
+  	RouteTable          	name:clusterabouttofail.k8s.local
+  	IPv6CIDR            	::/0
+  	InternetGateway     	name:clusterabouttofail.k8s.local
+
+  RouteTable/clusterabouttofail.k8s.local
+  	VPC                 	name:clusterabouttofail.k8s.local
+  	Shared              	false
+  	Tags                	{Name: clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, kubernetes.io/kops/role: public}
+
+  RouteTableAssociation/eu-central-1a.clusterabouttofail.k8s.local
+  	RouteTable          	name:clusterabouttofail.k8s.local
+  	Subnet              	name:eu-central-1a.clusterabouttofail.k8s.local
+
+  Secret/admin
+
+  Secret/kube
+
+  Secret/kube-proxy
+
+  Secret/kubelet
+
+  Secret/system:controller_manager
+
+  Secret/system:dns
+
+  Secret/system:logging
+
+  Secret/system:monitoring
+
+  Secret/system:scheduler
+
+  SecurityGroup/api-elb.clusterabouttofail.k8s.local
+  	Description         	Security group for api ELB
+  	VPC                 	name:clusterabouttofail.k8s.local
+  	RemoveExtraRules    	[port=443]
+  	Tags                	{kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, Name: api-elb.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local}
+
+  SecurityGroup/masters.clusterabouttofail.k8s.local
+  	Description         	Security group for masters
+  	VPC                 	name:clusterabouttofail.k8s.local
+  	RemoveExtraRules    	[port=22, port=443, port=2380, port=2381, port=4001, port=4002, port=4789, port=179, port=8443]
+  	Tags                	{Name: masters.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned}
+
+  SecurityGroup/nodes.clusterabouttofail.k8s.local
+  	Description         	Security group for nodes
+  	VPC                 	name:clusterabouttofail.k8s.local
+  	RemoveExtraRules    	[port=22]
+  	Tags                	{Name: nodes.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned}
+
+  SecurityGroupRule/from-0.0.0.0/0-ingress-tcp-22to22-masters.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:masters.clusterabouttofail.k8s.local
+  	CIDR                	0.0.0.0/0
+  	Protocol            	tcp
+  	FromPort            	22
+  	ToPort              	22
+
+  SecurityGroupRule/from-0.0.0.0/0-ingress-tcp-22to22-nodes.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:nodes.clusterabouttofail.k8s.local
+  	CIDR                	0.0.0.0/0
+  	Protocol            	tcp
+  	FromPort            	22
+  	ToPort              	22
+
+  SecurityGroupRule/from-0.0.0.0/0-ingress-tcp-443to443-api-elb.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:api-elb.clusterabouttofail.k8s.local
+  	CIDR                	0.0.0.0/0
+  	Protocol            	tcp
+  	FromPort            	443
+  	ToPort              	443
+
+  SecurityGroupRule/from-::/0-ingress-tcp-22to22-masters.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:masters.clusterabouttofail.k8s.local
+  	IPv6CIDR            	::/0
+  	Protocol            	tcp
+  	FromPort            	22
+  	ToPort              	22
+
+  SecurityGroupRule/from-::/0-ingress-tcp-22to22-nodes.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:nodes.clusterabouttofail.k8s.local
+  	IPv6CIDR            	::/0
+  	Protocol            	tcp
+  	FromPort            	22
+  	ToPort              	22
+
+  SecurityGroupRule/from-::/0-ingress-tcp-443to443-api-elb.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:api-elb.clusterabouttofail.k8s.local
+  	IPv6CIDR            	::/0
+  	Protocol            	tcp
+  	FromPort            	443
+  	ToPort              	443
+
+  SecurityGroupRule/from-api-elb.clusterabouttofail.k8s.local-egress-all-0to0-0.0.0.0/0
+  	SecurityGroup       	name:api-elb.clusterabouttofail.k8s.local
+  	CIDR                	0.0.0.0/0
+  	Egress              	true
+
+  SecurityGroupRule/from-api-elb.clusterabouttofail.k8s.local-egress-all-0to0-::/0
+  	SecurityGroup       	name:api-elb.clusterabouttofail.k8s.local
+  	IPv6CIDR            	::/0
+  	Egress              	true
+
+  SecurityGroupRule/from-masters.clusterabouttofail.k8s.local-egress-all-0to0-0.0.0.0/0
+  	SecurityGroup       	name:masters.clusterabouttofail.k8s.local
+  	CIDR                	0.0.0.0/0
+  	Egress              	true
+
+  SecurityGroupRule/from-masters.clusterabouttofail.k8s.local-egress-all-0to0-::/0
+  	SecurityGroup       	name:masters.clusterabouttofail.k8s.local
+  	IPv6CIDR            	::/0
+  	Egress              	true
+
+  SecurityGroupRule/from-masters.clusterabouttofail.k8s.local-ingress-all-0to0-masters.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:masters.clusterabouttofail.k8s.local
+  	SourceGroup         	name:masters.clusterabouttofail.k8s.local
+
+  SecurityGroupRule/from-masters.clusterabouttofail.k8s.local-ingress-all-0to0-nodes.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:nodes.clusterabouttofail.k8s.local
+  	SourceGroup         	name:masters.clusterabouttofail.k8s.local
+
+  SecurityGroupRule/from-nodes.clusterabouttofail.k8s.local-egress-all-0to0-0.0.0.0/0
+  	SecurityGroup       	name:nodes.clusterabouttofail.k8s.local
+  	CIDR                	0.0.0.0/0
+  	Egress              	true
+
+  SecurityGroupRule/from-nodes.clusterabouttofail.k8s.local-egress-all-0to0-::/0
+  	SecurityGroup       	name:nodes.clusterabouttofail.k8s.local
+  	IPv6CIDR            	::/0
+  	Egress              	true
+
+  SecurityGroupRule/from-nodes.clusterabouttofail.k8s.local-ingress-all-0to0-nodes.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:nodes.clusterabouttofail.k8s.local
+  	SourceGroup         	name:nodes.clusterabouttofail.k8s.local
+
+  SecurityGroupRule/from-nodes.clusterabouttofail.k8s.local-ingress-tcp-1to2379-masters.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:masters.clusterabouttofail.k8s.local
+  	Protocol            	tcp
+  	FromPort            	1
+  	ToPort              	2379
+  	SourceGroup         	name:nodes.clusterabouttofail.k8s.local
+
+  SecurityGroupRule/from-nodes.clusterabouttofail.k8s.local-ingress-tcp-2382to4000-masters.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:masters.clusterabouttofail.k8s.local
+  	Protocol            	tcp
+  	FromPort            	2382
+  	ToPort              	4000
+  	SourceGroup         	name:nodes.clusterabouttofail.k8s.local
+
+  SecurityGroupRule/from-nodes.clusterabouttofail.k8s.local-ingress-tcp-4003to65535-masters.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:masters.clusterabouttofail.k8s.local
+  	Protocol            	tcp
+  	FromPort            	4003
+  	ToPort              	65535
+  	SourceGroup         	name:nodes.clusterabouttofail.k8s.local
+
+  SecurityGroupRule/from-nodes.clusterabouttofail.k8s.local-ingress-udp-1to65535-masters.clusterabouttofail.k8s.local
+  	SecurityGroup       	name:masters.clusterabouttofail.k8s.local
+  	Protocol            	udp
+  	FromPort            	1
+  	ToPort              	65535
+  	SourceGroup         	name:nodes.clusterabouttofail.k8s.local
+
+  SecurityGroupRule/https-elb-to-master
+  	SecurityGroup       	name:masters.clusterabouttofail.k8s.local
+  	Protocol            	tcp
+  	FromPort            	443
+  	ToPort              	443
+  	SourceGroup         	name:api-elb.clusterabouttofail.k8s.local
+
+  SecurityGroupRule/icmp-pmtu-api-elb-0.0.0.0/0
+  	SecurityGroup       	name:api-elb.clusterabouttofail.k8s.local
+  	CIDR                	0.0.0.0/0
+  	Protocol            	icmp
+  	FromPort            	3
+  	ToPort              	4
+
+  SecurityGroupRule/icmpv6-pmtu-api-elb-::/0
+  	SecurityGroup       	name:api-elb.clusterabouttofail.k8s.local
+  	IPv6CIDR            	::/0
+  	Protocol            	icmpv6
+  	FromPort            	-1
+  	ToPort              	-1
+
+  Subnet/eu-central-1a.clusterabouttofail.k8s.local
+  	ShortName           	eu-central-1a
+  	VPC                 	name:clusterabouttofail.k8s.local
+  	AvailabilityZone    	eu-central-1a
+  	CIDR                	172.20.32.0/19
+  	Shared              	false
+  	Tags                	{Name: eu-central-1a.clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local, kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, SubnetType: Public, kubernetes.io/role/elb: 1, kubernetes.io/role/internal-elb: 1}
+
+  VPC/clusterabouttofail.k8s.local
+  	CIDR                	172.20.0.0/16
+  	AmazonIPv6          	true
+  	EnableDNSHostnames  	true
+  	EnableDNSSupport    	true
+  	Shared              	false
+  	Tags                	{kubernetes.io/cluster/clusterabouttofail.k8s.local: owned, Name: clusterabouttofail.k8s.local, KubernetesCluster: clusterabouttofail.k8s.local}
+
+  VPCAmazonIPv6CIDRBlock/AmazonIPv6
+  	VPC                 	name:clusterabouttofail.k8s.local
+  	Shared              	false
+
+  VPCDHCPOptionsAssociation/clusterabouttofail.k8s.local
+  	VPC                 	name:clusterabouttofail.k8s.local
+  	DHCPOptions         	name:clusterabouttofail.k8s.local
+
+  WarmPool/master-eu-central-1a.masters.clusterabouttofail.k8s.local
+  	Enabled             	false
+  	MinSize             	0
+
+  WarmPool/nodes-eu-central-1a.clusterabouttofail.k8s.local
+  	Enabled             	false
+  	MinSize             	0
+
+Must specify --yes to apply changes
+
+Cluster configuration has been created.
+
+Suggestions:
+ * list clusters with: kops get cluster
+ * edit this cluster with: kops edit cluster clusterabouttofail.k8s.local
+ * edit your node instance group: kops edit ig --name=clusterabouttofail.k8s.local nodes-eu-central-1a
+ * edit your master instance group: kops edit ig --name=clusterabouttofail.k8s.local master-eu-central-1a
+
+Finally configure your cluster with: kops update cluster --name clusterabouttofail.k8s.local --yes --admin
