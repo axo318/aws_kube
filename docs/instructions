@@ -1,0 +1,32 @@
+-- Create CA certificate for: kops export kubecfg clusterabouttofail.k8s.local
+
+1)
+Download the kops-generated CA certificate and signing key from S3:
+s3://<BUCKET_NAME>/<CLUSTER_NAME>/pki/private/ca/*.key
+s3://<BUCKET_NAME>/<CLUSTER_NAME>/pki/issued/ca/*.crt
+
+2)
+Generate a client key: openssl genrsa -out client-key.pem 2048
+Generate a CSR:
+
+openssl req -new \
+  -key client-key.pem \
+  -out client-csr.pem \
+  -subj "/CN=<CLIENT_CN>/O=dev"`
+
+3)
+Generate a client certificate:
+
+openssl x509 -req \
+  -in client-csr.pem \
+  -CA <PATH_TO_DOWNLOADED_CA_CERT> \
+  -CAkey <PATH_TO_DOWNLOADED_CA_KEY> \
+  -CAcreateserial \
+  -out client-crt.pem \
+  -days 10000
+
+4)
+Base64-encode the client key, client certificate, and CA certificate, and populate those values in a config.yml, e.g. this
+Distribute the populated config.yml to your developers.
+
+5) and 6 can obviously be distributed by whatever means you want, don't need to make the config.yml for your developers.
